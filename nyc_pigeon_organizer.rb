@@ -29,19 +29,19 @@ def nyc_pigeon_organizer(data)
       names.each do |name|
         if output_hash.include?(name) == false 
           output_hash[name] = {category => []}
-          binding.pry 
+          #binding.pry 
         #leaving this as an else though  might want to add a check
         #to see if the category is already added in case that category is
         #repeated more than once in the original hash 
         elsif output_hash.include?(name) && !output_hash[name].include?(category)
           output_hash[name][category] = []
-          binding.pry
+          #binding.pry
         else
           #do nothing 
         end 
         if names.include?(name)
           output_hash[name][category] << value_key.to_s  
-          binding.pry
+          #binding.pry
         end
       end 
     end 
