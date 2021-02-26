@@ -36,7 +36,8 @@ def nyc_pigeon_organizer(data)
         else
           #do nothing 
         end 
-        #didn't make sense to include this in the if statements but I don't 
+        #didn't make sense to include this in the if statements since it 
+        #would've have to go multiple places but I don't 
         #love that there is a separate new if statement 
         if names.include?(name)
           output_hash[name][category] << value_key.to_s  
