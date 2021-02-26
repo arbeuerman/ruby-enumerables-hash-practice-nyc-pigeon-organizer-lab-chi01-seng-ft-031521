@@ -49,5 +49,5 @@ def nyc_pigeon_organizer(data)
   output_hash
 end
 
-puts nyc_pigeon_organizer(pigeon_data)
+pp nyc_pigeon_organizer(pigeon_data)
 
