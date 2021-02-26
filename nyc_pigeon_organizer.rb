@@ -38,7 +38,7 @@ def nyc_pigeon_organizer(data)
           binding.pry
         end
         if names.include?(name)
-          output_hash[name][category] << value_key 
+          output_hash[name][category] << value_key.to_s  
           binding.pry
         end
       end 
