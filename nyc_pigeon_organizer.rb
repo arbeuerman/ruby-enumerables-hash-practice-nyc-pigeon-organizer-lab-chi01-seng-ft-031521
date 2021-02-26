@@ -32,11 +32,16 @@ def nyc_pigeon_organizer(data)
         #repeated more than once in the original hash 
         else 
           output_hash[name][category] = []
-        end  
+        end
+        if names.include?(name)
+          output_hash[name][category] << value_key 
+        end
       end 
     end 
   end
-  output_hash[name].each do |date_category, option|
+  output_hash[name].each do |data_category, option|
+    
+  end 
 end
 
 puts nyc_pigeon_organizer(pigeon_data)
