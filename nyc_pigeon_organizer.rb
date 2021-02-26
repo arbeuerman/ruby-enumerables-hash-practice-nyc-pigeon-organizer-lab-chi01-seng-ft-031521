@@ -22,9 +22,8 @@ pigeon_data = {
 
 
 def nyc_pigeon_organizer(data)
-  # write your code here!
-  hash_keys = []
   output_hash = {}
+
   data.each do |category, value_option|
     value_option.each do |value_key, names|
       names.each do |name|
@@ -49,5 +48,5 @@ def nyc_pigeon_organizer(data)
   output_hash
 end
 
-pp nyc_pigeon_organizer(pigeon_data)
+puts nyc_pigeon_organizer(pigeon_data)
 
