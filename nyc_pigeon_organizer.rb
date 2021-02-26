@@ -29,7 +29,7 @@ def nyc_pigeon_organizer(data)
         if output_hash.include?(name) == false 
           output_hash[name] = {category => []}
         else
-          
+          output_hash[name][category] = []
         end  
       end 
     end 
