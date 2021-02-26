@@ -26,7 +26,7 @@ def nyc_pigeon_organizer(data)
     value_option.each do |value_key, names|
       names.each do |name|
         if output_hash.include?(name) == false 
-          output_hash[name] = {category => []
+          output_hash[name] = {category => []}
         #leaving this as an else though  might want to add a check
         #to see if the category is already added in case that category is
         #repeated more than once in the original hash 
